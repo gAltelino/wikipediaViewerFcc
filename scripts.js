@@ -21,7 +21,7 @@ function searchWikipedia(){
             $( "#searchDiv" ).append( '<div class="card-block">');
             $( "#searchDiv" ).append( '<h3 class="card-title">' + data[1][i] + '</h3>');
             $( "#searchDiv" ).append( '<p class="card-text">' + data[2][i] + '</p>');
-            $( "#searchDiv" ).append( '<a href="' + data[3][i] + '" class="btn btn-primary" target="_blank">Go to Wikipedia</a>');
+            $( "#searchDiv" ).append( '<a href="' + data[3][i] + '" class="btn btn-primary btnspaced" target="_blank">Go to Wikipedia</a>');
             $( "#searchDiv" ).append( '</div>');
                     $( "#searchDiv" ).append( '</div>');
 

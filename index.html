@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
  <head>
-    <title>Weather App</title>
+    <title>Wikipedia Random Quotes</title>
     <meta charset="UTF-8">
     <meta name="description" content="Wikipedia Viewer FCC">
     <meta name="keywords" content="Free Code Camp, Wikipedia">
@@ -15,15 +15,16 @@
     
     <nav class="navbar navbar-light fixed-top">
         <form class="form-inline align-left">
-            <input type="text" class="form-control"     placeholder="Search for subject here!" id="queryBox" >
+            <div class="form-group col-12">
+                <input type="text" class="form-control col-4"  placeholder="Search for subject here!" id="queryBox" onkeypress="return event.keyCode != 13" >
             
-            <button class="btn btn-secondary" onclick="searchWikipedia()" type="button">Search</button>
+                <button class="btn btn-secondary" onclick="searchWikipedia()" type="button">Search</button>
 
-            <button class="btn btn-secondary" type="button" onclick="randomWikipediaPage()">Random</button>
-
+                <button class="btn btn-secondary" type="button" onclick="randomWikipediaPage()">Random</button>
+            </div>
         </form>
     </nav>
-
+    
     <div id="searchDiv" class="container">
 
     </div>
